@@ -1,23 +1,12 @@
 # ------- SSH Key for GitHub -------
-echo "Creating an SSH key for you... 🔐"
-ssh-keygen -t rsa
+#echo "Creating an SSH key for you... 🔐"
+#ssh-keygen -t rsa
 
-echo "Please add this public key to Github 👻 \n"
-cat ~/.ssh/id_rsa.pub
-open -a Safari https://github.com/settings/keys
-read -p "Press [Enter] key after this... ⌨️"
+# echo "Please add this public key to Github 👻 \n"
+# cat ~/.ssh/id_rsa.pub
+# open -a Safari https://github.com/settings/keys
+# read -p "Press [Enter] key after this... ⌨️"
 # ------- SSH Key for GitHub -------
-
-# ------- Xcode -------
-echo "Installing xcode-stuff 👨‍💻"
-xcode-select --install
-# ------- Xcode -------
-
-# ------- Install things from the App Store -------
-echo "Install things from the App Store e. g. Final Cut"
-open /System/Applications/App\ Store.app 
-read -p "Press [Enter] key after you are done... ⌨️"
-# ------- Install things from the App Store -------
 
 # ------- Homebrew -------
 # Check for Homebrew,
@@ -39,17 +28,26 @@ brew update
 echo "Installing Git... 🦸‍♂️"
 brew install git
 
-echo "Git config 🙋‍♂️ - Enter your data and press Enter!"
 
 
-echo -n 'Username: '
-read username
-git config --global user.name "$username"
+# echo "Git config 🙋‍♂️ - Enter your data and press Enter!"
 
-echo -n 'Mail: '
-read mail
-git config --global user.email $mail
+
+# echo -n 'Username: '
+# read username
+# git config --global user.name "$username"
+
+# echo -n 'Mail: '
+# read mail
+# git config --global user.email $mail
 # ------- Git -------
+
+# ------- Install things from the App Store -------
+echo "Install things from the App Store e. g. Final Cut"
+open /System/Applications/App\ Store.app 
+read -p "Press [Enter] key after you are done... ⌨️"
+# ------- Install things from the App Store -------
+
 
 # ------- Terminal Setup -------
 
@@ -83,11 +81,7 @@ brew install homebrew/cask
 apps=(
   alfred
   bettertouchtool
-  bitwarden
-  google-chrome
   iterm2
-  sourcetree
-  spotify
 )
 
 # Install apps to /Applications
